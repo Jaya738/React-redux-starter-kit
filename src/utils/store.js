@@ -1,12 +1,12 @@
 import { createStore, combineReducers } from "redux";
 import _ from "lodash";
-// import cartReducer from "./reducers/cartReducer";
-import { loadState, saveState } from "./localStorage";
+import config from "./reducers/config";
+import { getFromLocalStorage, setInLocalStorage } from "./storageHelper";
 
-const persistedState = loadState();
+const persistedState = getFromLocalStorage('state');
 
 const rootReducer = combineReducers({
-//   cart: cartReducer,
+  config,
 });
 
 const Store = createStore(
@@ -17,8 +17,8 @@ const Store = createStore(
 
 Store.subscribe(
   _.throttle(() => {
-    saveState({
-    //   cart: Store.getState().cart,
+    setInLocalStorage('state', {
+    config: Store.getState().config,
     });
   }, 1000)
 );
