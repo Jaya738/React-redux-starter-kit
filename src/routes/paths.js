@@ -1,10 +1,10 @@
-const general = {
+const publicRoutes = {
     home: '/',
     login: '/login',
     register: '/register',
 }
 
-const product = {
+const gaurdedRoutes = {
     cart: '/cart',
     products: '/products',
     checkout: '/checkout',
@@ -14,6 +14,6 @@ const product = {
 }
 
 export default {
-    ...general,
-    ...product
+    ...publicRoutes,
+    ...gaurdedRoutes
 }
