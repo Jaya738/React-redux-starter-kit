@@ -1,0 +1,12 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Groceries"
+    },
+    {
+      "id": 2,
+      "name": "Clothing"
+    }
+  ]
+}
