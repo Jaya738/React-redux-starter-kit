@@ -19,9 +19,6 @@ const AppViewport = () => {
             sensitive={Boolean(route.sensitive)}
           />
         ))}
-      <Route exact path="/">
-        <Redirect to="/" />
-      </Route>
     </>
   );
 };

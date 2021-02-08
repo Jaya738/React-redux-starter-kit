@@ -1,6 +1,6 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React from "react";
 import AppViewport from "./components/AppViewPort";
-function App(props) {
+function App() {
   return <AppViewport />;
 }
 export default App;

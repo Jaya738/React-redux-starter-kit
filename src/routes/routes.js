@@ -10,13 +10,14 @@ import {
 } from "../pages";
 import strings from "../utils/localization";
 
-import { appendPathTemplate, pathTemplate } from "../utils/routing";
+import { pathTemplate } from "../utils/routing";
 
 export const homepage = {
   ...features.homepage,
   path: pathTemplate(paths.home),
   name: strings.home,
   component: Home,
+  exact: true,
 };
 
 export const publicRoutes = [
@@ -36,6 +37,7 @@ export const publicRoutes = [
 ];
 
 export const gaurdedRoutes = [
+  homepage,
   {
     ...features.checkout,
     path: pathTemplate(paths.checkout),

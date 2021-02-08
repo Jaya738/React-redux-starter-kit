@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 import _ from "lodash";
-import { combineReducers } from "./reducers";
+import { combineReducers } from "../reducers";
 import { getFromLocalStorage, setInLocalStorage } from "./storageHelper";
 
 const persistedState = getFromLocalStorage("state");
