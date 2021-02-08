@@ -1,7 +1,7 @@
 import paths from "./paths";
 import features from "../features";
 import {
-  Dashboard,
+  Home,
   Login,
   Register,
   Checkout,
@@ -16,7 +16,7 @@ export const homepage = {
   ...features.homepage,
   path: pathTemplate(paths.home),
   name: strings.home,
-  component: Dashboard,
+  component: Home,
 };
 
 export const publicRoutes = [

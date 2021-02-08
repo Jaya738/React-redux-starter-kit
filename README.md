@@ -1,4 +1,10 @@
+## Pending
 
+Pages
+Components
+MiddleWare
+Selectors
+Styles
 
 ## Available Scripts
 
