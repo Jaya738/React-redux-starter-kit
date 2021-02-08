@@ -1,5 +1,5 @@
 import React from "react";
-import AppViewport from "./components/AppViewPort";
+import { AppViewport } from "./components";
 function App() {
   return <AppViewport />;
 }
